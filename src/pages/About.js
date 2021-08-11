@@ -1,6 +1,10 @@
+import React from 'react';
+import Header from '../components/Header';
+
 export default function About (){
   return (
     <div>
+      <Header />
       <h1>A Bit About Me</h1>
       <p>
       I live in North Minneapolis with my girlfriend and cat companion. We have a beautiful house in the Victory neighborhood near Robbinsdale. I'm a gamer who loves to camp and go on walks. I love animals, am really into birding, and have always enjoyed dabbling with computers and tech.
