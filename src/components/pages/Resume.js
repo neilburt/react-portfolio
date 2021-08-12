@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function NoMatch() {
+export default function Resume() {
   return (
     <div>
-
+      
     </div>
   )
 }
