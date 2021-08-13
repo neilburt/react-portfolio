@@ -1,17 +1,18 @@
 import React from 'react';
 
-export default function Project() {
+export default function Project(props) {
+
   return (
-    <div className="card">
-      <img className="card-img-top center" src="./images/event-organizer.jpg" alt="project card screenshot" />
-      <div className="card-body">
-        <h4 className="card-title">Event Organizer</h4>
-        <p className="card-text">
-          Explore, save, and buy tickets to nearby events or create your own.
-        </p>
-        <a href="https://gentle-reaches-60799.herokuapp.com/" className="btn btn-secondary">Deployed App</a>
-        <a href="https://github.com/neilburt/group-project-2" className="btn btn-secondary">Repository</a>
+    <div className="container text-center d-flex column justify-content-center col-6-md col-3-sm">
+      <div className="card">
+        <div className="card-body">
+          <h2 className="card-title">{props.name}</h2>
+          <div className="card-image">{props.image}</div>
+          <p className="card-text">{props.description}</p>
+          <div className="card-deployed">{props.deployed}</div>
+          <div className="card-repo">{props.repository}</div>
+        </div>
       </div>
     </div>
-  )
+  );
 }

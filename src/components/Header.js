@@ -5,6 +5,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import '../App.css';
 
 export default function Header() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -26,14 +27,18 @@ export default function Header() {
 
   return (
     <>
-    <header className="App-header">
-      <div className="jumbotron jumbotron-fluid">
-        <h1 className="display-3">Neil Burt</h1>
+      <header>
+        <div className="jumbotron jumbotron-fluid">
+          <div className="container">
+            <h1 className="display-3">Neil Burt</h1>
+            <p className="lead">Full Stack Developer</p>
+          </div>
+        </div>
         <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-        {renderPage()}
-      </div>
-    </header>
-    <Footer />
+      </header>
+
+      {renderPage()}
+      <Footer />
     </>
   )
 }
