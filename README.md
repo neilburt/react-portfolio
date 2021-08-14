@@ -14,17 +14,17 @@ This is a single-page React-built portfolio detailing my professional offerings.
   
 ## Installation  
   
-Just visit the link in the [Usage](#usage) section below and sidestep installation altogether!  
-
+No installation necessary; just visit the link in the [Usage](#usage) section below.  
+  
 ## Technology Stack  
   
 JavaScript, HTML5, CSS3, React, and NodeJS.
-  
+    
 ## Usage  
   
 A prospective employer or client can take a look at what I've got to offer them across the multiple sections of my page.  
   
-Check out the [deployed app](https://stormy-crag-19904.herokuapp.com/).  
+Check out the [deployed app](https://neilburt.github.io/react-portfolio/).  
   
 ## Screenshots  
 ![screenshot of Tech Blog homepage](./src/images/screenshot.jpg)  
