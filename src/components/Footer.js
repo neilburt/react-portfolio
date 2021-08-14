@@ -1,9 +1,9 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
 import github from '../../src/images/github.png';
 import linkedin from '../../src/images/linkedin.png';
 import facebook from '../../src/images/facebook.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../App.css';
 
 export default function Footer() {
   return (

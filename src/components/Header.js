@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import '../App.css';
 
 export default function Header() {
   const [currentPage, setCurrentPage] = useState('About');

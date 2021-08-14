@@ -22,7 +22,7 @@ const data = [
     deployed: 
       <a 
         href="https://gentle-reaches-60799.herokuapp.com/" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Deployed App
@@ -30,7 +30,7 @@ const data = [
     repository: 
       <a 
         href="https://github.com/neilburt/group-project-2" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Repository
@@ -50,7 +50,7 @@ const data = [
     deployed: 
       <a 
         href="https://jchosay.github.io/group-pj1-covid-goal-track/" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Deployed App
@@ -58,7 +58,7 @@ const data = [
     repository: 
       <a 
         href="https://github.com/JChosay/group-pj1-covid-goal-track" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Repository
@@ -78,7 +78,7 @@ const data = [
     deployed: 
       <a 
         href="https://drive.google.com/file/d/19K5MZBIZtR-hASK9Iqdd1FWEI6M-0G36/view?usp=sharing" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Deployed App
@@ -86,7 +86,7 @@ const data = [
     repository: 
       <a 
         href="https://github.com/neilburt/employee-tracker" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Repository
@@ -105,7 +105,7 @@ const data = [
     deployed: 
       <a 
         href="https://stormy-crag-19904.herokuapp.com/" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Deployed App
@@ -113,7 +113,7 @@ const data = [
     repository: 
       <a 
         href="https://github.com/neilburt/tech-blog" 
-        className="btn btn-secondary"  
+        className="btn-sm"  
         target="_blank" 
         rel="noreferrer">
           Repository
@@ -133,7 +133,7 @@ const data = [
     deployed: 
       <a 
         href="https://afternoon-spire-63323.herokuapp.com/" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Deployed App
@@ -141,7 +141,7 @@ const data = [
     repository: 
       <a 
         href="https://github.com/neilburt/workout-tracker" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Repository
@@ -161,7 +161,7 @@ const data = [
     deployed: 
       <a 
         href="https://neilburt.github.io/weather-dashboard/" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Deployed App
@@ -169,7 +169,7 @@ const data = [
     repository: 
       <a 
         href="https://github.com/neilburt/weather-dashboard" 
-        className="btn btn-secondary" 
+        className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Repository

@@ -1,9 +1,10 @@
 import React from 'react';
-import '../App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
 
 export default function Navigation({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs justify-content-end">
       <li className="nav-item">
         <a
           href="#about"

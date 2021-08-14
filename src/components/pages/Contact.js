@@ -47,7 +47,9 @@ export default function Contact() {
   }
 
   return (
-    <div>
+    <div className="container-fluid">
+      <div className="row justify-content-center">
+        <div className="col-6">
       <form className="form">
         <div className="form-group">
         <label for="name">Name</label>
@@ -75,23 +77,26 @@ export default function Contact() {
         </div>
         <div class="form-group">
         <label for="message">Message</label>
-        <input
+        <textarea
           value={message}
           name="message"
           onChange={handleInputChange}
           onBlur={handleInputBlur}
           className="form-control"
-          type="textbox"
-          placeholder="your message"
-        />
+          rows="4"
+          type="text"
+          placeholder="your message">
+        </textarea>
         </div>
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+        <button type="button" className="btn" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
+        <div className="alert alert-warning" role="alert">
+          {errorMessage}
         </div>
       )}
+      </div>
+      </div>
     </div>
   )
 }

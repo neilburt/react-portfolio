@@ -1,10 +1,9 @@
 import React from 'react';
 import profile from '../../images/profile.jpg';
-import '../../'
 
 export default function About() {
   return (
-    <div className="about container-fluid d-flex">
+    <div className="about container-fluid d-flex flex-column text-center">
       <div className="about-text">
         <h2 className="bio-heading text-center">A Bit About Me</h2>
         <div className="bio">
@@ -15,7 +14,7 @@ export default function About() {
         </div>
       </div>
       <div className="profile">
-        <img src={profile} alt="profile"></img>
+        <img className="profile-pic" src={profile} alt="profile"></img>
       </div>
     </div>
   )
