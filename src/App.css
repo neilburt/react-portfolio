@@ -5,11 +5,17 @@
 
 * {
   font-family: 'Mada';
-  background-color: var(--blue);
 }
 
+html, 
 body {
-  font-family: 'Mada', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Mada', sans-serif;
+    background-color: var(--blue);
 }
 
 .jumbotron {
@@ -30,23 +36,32 @@ a {
   background-color: var(--gold);
 }
 
+.nav.nav-tabs {
+  padding-right: 1rem;
+  width: 100%;
+}
+
 a.nav-link {
   color: var(--blue);
+  font-weight: 600;
 }
 
 a.nav-link:hover {
   color: var(--blue);
+  font-weight: 600;
 }
 
 .nav-item > a.nav-link {
   background-color: var(--gold);
   color: var(--blue);
+  font-weight: 600;
   border-bottom-color: white;
 }
 
 .nav-item > a.nav-link.active {
   background-color: var(--blue);
   color: var(--gold);
+  font-weight: 600;
   border-bottom-color: var(--blue);
 }
 
@@ -84,6 +99,11 @@ a.nav-link:hover {
 .card > .card-header {
   background-color: var(--gold);
   color: var(--blue);
+  font-weight: 600;
+}
+
+.card-body {
+  background-color: var(--blue);
 }
 
 .card-body > .card-text {
@@ -154,9 +174,14 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.col {
+  padding: 0;
+}
+
 .footer {
   background-color: var(--blue);
   padding: 2.5rem 0 1.5rem 0;
+  margin-right: 0;
 }
 
 .footer-img {

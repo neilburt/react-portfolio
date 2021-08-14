@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import github from '../../src/images/github.png';
 import linkedin from '../../src/images/linkedin.png';
-import facebook from '../../src/images/facebook.png';
+import stackoverflow from '../../src/images/stackoverflow.png';
 
 export default function Footer() {
   return (
@@ -16,8 +16,8 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/neil-burt/" target="_blank" rel="noreferrer">
             <img className="footer-img linkedin" alt="contact" src={linkedin}></img>
           </a>
-          <a href="https://www.facebook.com/neil.c.burt" target="_blank" rel="noreferrer">
-            <img className="footer-img facebook" alt="contact" src={facebook}></img>
+          <a href="https://stackoverflow.com/users/15825086/neil-burt" target="_blank" rel="noreferrer">
+            <img className="footer-img stackoverflow" alt="contact" src={stackoverflow}></img>
           </a>
         </div>
       </div>
