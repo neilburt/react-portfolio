@@ -49,30 +49,42 @@ export default function Contact() {
   return (
     <div>
       <form className="form">
+        <div className="form-group">
+        <label for="name">Name</label>
         <input
           value={name}
           name="name"
           onChange={handleInputChange}
           onBlur={handleInputBlur}
+          className="form-control"
           type="text"
           placeholder="name"
         />
+        </div>
+        <div class="form-group">
+        <label for="email">Email</label>
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           onBlur={handleInputBlur}
+          className="form-control"
           type="email"
           placeholder="email"
         />
+        </div>
+        <div class="form-group">
+        <label for="message">Message</label>
         <input
           value={message}
           name="message"
           onChange={handleInputChange}
           onBlur={handleInputBlur}
+          className="form-control"
           type="textbox"
           placeholder="your message"
         />
+        </div>
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
