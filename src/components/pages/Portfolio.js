@@ -6,10 +6,39 @@ import employeeTracker from '../../images/employee-tracker.jpg';
 import techBlog from '../../images/tech-blog.jpg';
 import workoutTracker from '../../images/workout-tracker.jpg';
 import weatherDashboard from '../../images/weather-dashboard.jpg';
+import diabloSource from '../../images/diablo-source.jpg';
 
 const data = [
   {
     id: 1,
+    name: "Diablo Source",
+    image:
+      <img
+        src={diabloSource}
+        alt="project card screenshot of web app"
+        className="card-img-top center">
+      </img>,
+    description: 
+      "Search for fellow Diablo III players, view their characters and save their BattleTags.",
+    deployed: 
+      <a
+        href="https://desolate-chamber-11891.herokuapp.com/" 
+        className="btn-sm" 
+        target="_blank" 
+        rel="noreferrer">
+          Deployed App
+      </a>,
+      repository: 
+      <a 
+        href="https://github.com/JacobBeckfeld/Project-3" 
+        className="btn-sm" 
+        target="_blank" 
+        rel="noreferrer">
+          Repository
+      </a>
+  },
+  {
+    id: 2,
     name: "Event Organizer",
     image: 
       <img 
@@ -37,7 +66,7 @@ const data = [
       </a>
   },
   {
-    id: 2,
+    id: 3,
     name: "COVID-19 Tracker",
     image: 
       <img 
@@ -65,7 +94,7 @@ const data = [
       </a>
   },
   {
-    id: 3,
+    id: 4,
     name: "Employee Tracker",
     image: 
       <img 
@@ -93,7 +122,7 @@ const data = [
       </a>
   },
   {
-    id: 4,
+    id: 5,
     name: "Tech Blog",
     image: 
       <img 
@@ -120,7 +149,7 @@ const data = [
       </a>
   },
   {
-    id: 5,
+    id: 6,
     name: "Workout Tracker",
     image: 
       <img 
@@ -148,7 +177,7 @@ const data = [
       </a>
   },
   {
-    id: 6,
+    id: 7,
     name: "Weather Dashboard",
     image: 
       <img 
