@@ -16,7 +16,7 @@ export default function Resume() {
       <div className="d-flex flex-row text-center">
         <div className="resume-sheets">
           <a
-            href="https://drive.google.com/file/d/1Z2l2-oPMZ8BYPTgHP2w-gpYnsQ5GEZ7e/view?usp=sharing"
+            href="https://drive.google.com/file/d/1yI_f6qEparCPP23w5YY2s4BZDPwqf5xX/view?usp=sharing"
             target="_blank"
             rel="noreferrer">
             <img
@@ -26,7 +26,7 @@ export default function Resume() {
             </img>
           </a>
           <a
-            href="https://drive.google.com/file/d/1Z2l2-oPMZ8BYPTgHP2w-gpYnsQ5GEZ7e/view?usp=sharing"
+            href="https://drive.google.com/file/d/1yI_f6qEparCPP23w5YY2s4BZDPwqf5xX/view?usp=sharing"
             target="_blank"
             rel="noreferrer">
             <img
