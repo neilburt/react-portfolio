@@ -1,24 +1,20 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/verify';
+import '../../App.css';
+import { send } from 'emailjs-com';
 
 export default function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+  const [toSend, setToSend] = useState({
+    name: '',
+    me: 'Neil',
+    message: '',
+    email: ''
+  })
 
   const handleInputChange = (e) => {
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    if (inputType === 'name') {
-      setName(inputValue);
-    } else if (inputType === 'email') {
-      setEmail(inputValue);
-    } else {
-      setMessage(inputValue);
-    }
+    setToSend({ ...toSend, [e.target.name]: e.target.value })
   }
 
   const handleInputBlur = (e) => {
@@ -32,18 +28,34 @@ export default function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email)) {
+    send(
+      'service_jp5k0hn',
+      'template_j2vk4wk',
+      toSend,
+      'user_HucWiei8oZXhw20s1Txn6'
+    )
+      .then((res) => {
+        setSuccessMessage('Email message sent.')
+        console.log('SUCCESS!', res.status, res.text)
+      })
+      .catch((err) => {
+        console.log('FAILED...', err)
+      })
+
+    if (!validateEmail(toSend.email)) {
       setErrorMessage('Please enter a valid email.');
       return;
 
-    } else if (!name.length || !email.length || !message.length) {
+    } else if (!toSend.name.length || !toSend.email.length || !toSend.message.length) {
       setErrorMessage('Please complete all fields.');
       return;
     }
 
-    setName('');
-    setEmail('');
-    setMessage('');
+    setToSend({
+      name: '',
+      email: '',
+      message: ''
+    })
   }
 
   return (
@@ -54,7 +66,7 @@ export default function Contact() {
             <div className="form-group">
               <label for="name">Name</label>
               <input
-                value={name}
+                value={toSend.name}
                 name="name"
                 onChange={handleInputChange}
                 onBlur={handleInputBlur}
@@ -66,7 +78,7 @@ export default function Contact() {
             <div class="form-group">
               <label for="email">Email</label>
               <input
-                value={email}
+                value={toSend.email}
                 name="email"
                 onChange={handleInputChange}
                 onBlur={handleInputBlur}
@@ -78,7 +90,7 @@ export default function Contact() {
             <div class="form-group">
               <label for="message">Message</label>
               <textarea
-                value={message}
+                value={toSend.message}
                 name="message"
                 onChange={handleInputChange}
                 onBlur={handleInputBlur}
@@ -91,8 +103,13 @@ export default function Contact() {
             <button type="button" className="btn" onClick={handleFormSubmit}>Submit</button>
           </form>
           {errorMessage && (
-            <div className="alert alert-warning" role="alert">
+            <div className="alert alert-warning col-5" role="alert">
               {errorMessage}
+            </div>
+          )}
+          {successMessage && (
+            <div className="alert alert-success col-5" role="alert">
+              {successMessage}
             </div>
           )}
         </div>

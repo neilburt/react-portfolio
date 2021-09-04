@@ -5,9 +5,9 @@ import '../App.css';
 export default function Project(props) {
 
   return (
-    <div className="container-fluid text-center d-flex column justify-content-center col-6-md col-3-sm portfolio">
+    <div className="container text-center d-flex column justify-content-center col-2-md portfolio">
       <div className="card">
-          <h2 className="card-header">{props.name}</h2>
+        <h2 className="card-header">{props.name}</h2>
         <div className="card-body">
           <div className="card-image">{props.image}</div>
           <h5 className="card-text">{props.description}</h5>
