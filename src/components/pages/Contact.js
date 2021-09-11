@@ -62,6 +62,9 @@ export default function Contact() {
     <div className="container-fluid">
       <div className="row justify-content-center">
         <div className="col-6">
+          <div className="contact-heading">
+            <h4>For your convenience, the form below can be used to contact me directly.</h4>
+          </div>
           <form className="form">
             <div className="form-group">
               <label for="name">Name</label>
@@ -112,6 +115,9 @@ export default function Contact() {
               {successMessage}
             </div>
           )}
+          <div className="text-center contact-footing">
+            <h5>Else, feel free to use my email address: <a href="mailto:neil.burt@comcast.net">neil.burt@comcast.net</a>.</h5>
+          </div>
         </div>
       </div>
     </div>

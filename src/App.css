@@ -123,16 +123,26 @@ a.nav-link:hover {
   font-weight: 600;
 }
 
+div.contact-heading > h4 {
+  color: var(--gold);
+  margin-top: 2rem;
+}
+
 form {
   background-color: var(--blue);
   color: var(--gold);
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .form > .btn {
   background-color: var(--gold);
   color: var(--blue);
   font-weight: 600;
+}
+
+div.contact-footing > h5 {
+  color: var(--gold);
+  margin-top: 1.5rem;
 }
 
 .resume {
