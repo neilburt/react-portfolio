@@ -28,14 +28,16 @@ const data = [
         rel="noreferrer">
           Deployed App
       </a>,
-      repository: 
+    repository: 
       <a 
-        href="https://github.com/JacobBeckfeld/Project-3" 
+        href="https://github.com/neilburt/diablo-source"
         className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Repository
-      </a>
+      </a>,
+    stack:
+      "MongoDB | Express | ReactJS | NodeJS | bcrypt | JSON Web Token | Mongoose | HTML5 | CSS3 | ES6+ | Blizzard API"
   },
   {
     id: 2,
@@ -58,12 +60,14 @@ const data = [
       </a>,
     repository: 
       <a 
-        href="https://github.com/neilburt/group-project-2" 
+        href="https://github.com/neilburt/event-organizer" 
         className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Repository
-      </a>
+      </a>,
+    stack:
+      "MySQL | Express | Handlebars | NodeJS | bcrypt | Sequelize | HTML5 | CSS3 | ES6+ | SeatGeek API"
   },
   {
     id: 3,
@@ -75,10 +79,10 @@ const data = [
         className="card-img-top center">
       </img>,
     description: 
-      "This web app attempted to influence the population through reinforcement to positively affect the COVID-19 vaccination rate and meet the Presidential goal.",
+      "This web app attempted to influence the population through operant conditioning to positively affect the COVID-19 vaccination rate and meet the Presidential goal.",
     deployed: 
       <a 
-        href="https://jchosay.github.io/group-pj1-covid-goal-track/" 
+        href="https://neilburt.github.io/covid-goal-track/" 
         className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
@@ -86,12 +90,14 @@ const data = [
       </a>,
     repository: 
       <a 
-        href="https://github.com/JChosay/group-pj1-covid-goal-track" 
+        href="https://github.com/neilburt/covid-goal-track" 
         className="btn-sm" 
         target="_blank" 
         rel="noreferrer">
           Repository
-      </a>
+      </a>,
+    stack:
+      "HTML5 | CSS3 | ES6+ | Covid Act Now API"
   },
   {
     id: 4,
@@ -119,7 +125,9 @@ const data = [
         target="_blank" 
         rel="noreferrer">
           Repository
-      </a>
+      </a>,
+    stack:
+      "MySQL | NodeJS | ES6+"
   },
   {
     id: 5,
@@ -146,7 +154,9 @@ const data = [
         target="_blank" 
         rel="noreferrer">
           Repository
-      </a>
+      </a>,
+    stack:
+      "MySQL | Express | Handlebars | NodeJS | bcrypt | Sequelize | HTML5 | CSS3 | ES6+"
   },
   {
     id: 6,
@@ -174,7 +184,9 @@ const data = [
         target="_blank" 
         rel="noreferrer">
           Repository
-      </a>
+      </a>,
+    stack:
+      "MongoDB | Express | NodeJS | Mongoose | HTML5 | CSS3 | ES6+"
   },
   {
     id: 7,
@@ -186,7 +198,7 @@ const data = [
         className="card-img-top center">
       </img>,
     description: 
-      "Check the current weather and get the 5-day forcast of a searched city.",
+      "Check the current weather and get the 5-day forecast of a searched city.",
     deployed: 
       <a 
         href="https://neilburt.github.io/weather-dashboard/" 
@@ -202,7 +214,9 @@ const data = [
         target="_blank" 
         rel="noreferrer">
           Repository
-      </a>
+      </a>,
+    stack:
+      "HTML5 | CSS3 | ES6+"
   }
 ]
 
@@ -217,6 +231,7 @@ export default function Portfolio() {
           description={projects.description} 
           deployed={projects.deployed} 
           repository={projects.repository} 
+          stack={projects.stack}
         />
       ))}
     </div>

@@ -13,6 +13,8 @@ export default function Project(props) {
           <h5 className="card-text">{props.description}</h5>
           <div className="card-deployed btn">{props.deployed}</div>
           <div className="card-repo btn">{props.repository}</div>
+          <h5 className="card-text stack-heading">Technologies</h5>
+          <h6 className="card-stack">{props.stack}</h6>
         </div>
       </div>
     </div>

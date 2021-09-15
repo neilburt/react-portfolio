@@ -75,7 +75,11 @@ a.nav-link:hover {
 }
 
 .about > .about-text {
-  margin: 0 3rem 0 3rem;
+  margin: 0 4rem 0 4rem;
+}
+
+.about > .about-text > .bio > p{
+  text-indent: 30px;
 }
 
 .profile {
@@ -123,6 +127,16 @@ a.nav-link:hover {
   font-weight: 600;
 }
 
+.card-body > .card-text.stack-heading {
+  text-decoration: underline;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.card-body > .card-stack {
+  color: var(--gold);
+}
+
 div.contact-heading > h4 {
   color: var(--gold);
   margin-top: 2rem;
@@ -142,6 +156,11 @@ form {
 
 div.contact-footing > h5 {
   color: var(--gold);
+  margin-top: 1.5rem;
+}
+
+div.contact-footing > h5 > a {
+  color: gold;
   margin-top: 1.5rem;
 }
 
